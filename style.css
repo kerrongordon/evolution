@@ -4,12 +4,24 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 p, a, h1, h2, h3, {
 	font-family: times;
 }
+body {
+	height: 100%;
+	position: relative;
+}
 
 /*------ main out divs tags ------*/
 
 #out-head {
 	width: 100%;
-	background: rgb(231,98,120);
+	min-height: 600px;
+	background: url(img/bg.jpg) no-repeat fixed;
+	background-color: rgb(231,98,120);
+	height: 100%;
+	overflow: hidden;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
 }
 #out-content {
 	width: 100%;
@@ -84,13 +96,17 @@ p, a, h1, h2, h3, {
 	color: #fff;
 	line-height: 30px;
 }
-.top-post img {
+.top-post .imgtop {
 	float: right;
 	width: 300px;
 	height: 300px;
 	border-radius: 100%;
-	border: 3px solid rgb(250,198,153);
+	text-align: center;
+	color: #ccc;
 	margin-top: -45px;
+}
+.top-post .fa-5x {
+	font-size: 15em;
 }
 
 /*------ top-post-button ------*/
@@ -361,4 +377,11 @@ textarea {
 	font-size: 20px;
 	color: #fff;
 	padding-bottom: 20px;
+}
+
+.macbook {
+	text-align: center;
+}
+.macbook img {
+	width: 600px;
 }
